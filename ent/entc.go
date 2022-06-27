@@ -14,6 +14,7 @@ import (
 func main() {
 	ex, err := entgql.NewExtension(
 		entgql.WithWhereFilters(true),
+		entgql.WithMutationInput(),
 		entgql.WithConfigPath("../gqlgen.yml"),
 		entgql.WithSchemaGenerator(),
 		entgql.WithSchemaPath("../graph/schemas/schema.graphqls"),
